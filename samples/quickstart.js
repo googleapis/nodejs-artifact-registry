@@ -13,7 +13,7 @@
 
 'use strict';
 
-async function main() {
+async function main(projectId, location) {
   // [START nodejs_artifact_registry_quickstart]
   // Imports the Google Cloud client library
 
@@ -27,19 +27,16 @@ async function main() {
   // const projectId = 'my-project'
 
   // Creates a client
-  // eslint-disable-next-line no-unused-vars
-  const client = new {ArtifactRegistryClient}();
+  const client = new ArtifactRegistryClient();
 
   //TODO(library generator): write the actual function you will be testing
-  async function doSomething() {
-    console.log(
-      'Developer! Change this code so that it shows how to use the library! See comments below on structure.'
-    );
-    // const [thing] = await client.methodName({
-    // });
-    // console.info(thing);
+  async function listsRepositories() {
+    const repositories = await client.listRepositories({
+      parent: `projects/${projectId}/locations/${location}`,
+    });
+    console.info(repositories);
   }
-  doSomething();
+  listsRepositories();
   // [END nodejs_artifact_registry_quickstart]
 }
 

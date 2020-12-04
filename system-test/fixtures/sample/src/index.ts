@@ -16,7 +16,7 @@
 // ** https://github.com/googleapis/gapic-generator-typescript **
 // ** All changes to this file may be overwritten. **
 
-import {ArtifactRegistryClient} from '@google-devtools/artifact-registry';
+import {ArtifactRegistryClient} from 'artifactregistry';
 
 // check that the client class type name can be used
 function doStuffWithArtifactRegistryClient(client: ArtifactRegistryClient) {

@@ -20,7 +20,7 @@
 const path = require('path');
 const cp = require('child_process');
 const {before, describe, it} = require('mocha');
-const {ArtifactRegistryClient} = require('@google-devtools/artifact-registry');
+const {ArtifactRegistryClient} = require('@google-cloud/artifact-registry');
 const {assert} = require('chai');
 const execSync = cmd => cp.execSync(cmd, {encoding: 'utf-8'});
 const location = 'us-central1';

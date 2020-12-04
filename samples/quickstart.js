@@ -19,9 +19,7 @@ async function main(projectId, location) {
 
   // remove this line after package is released
   // eslint-disable-next-line node/no-missing-require
-  const {
-    ArtifactRegistryClient,
-  } = require('@google-devtools/artifact-registry');
+  const {ArtifactRegistryClient} = require('@google-cloud/artifact-registry');
 
   // TODO(developer): replace with your prefered project ID.
   // const projectId = 'my-project'

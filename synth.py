@@ -30,7 +30,7 @@ for version in versions:
   name, 
   version,
   bazel_target=f"//google/devtools/artifactregistry/{version}:devtools-artifactregistry-{version}-nodejs")
-  s.copy(library, excludes=["README.md", "package.json"])
+  s.copy(library, excludes=["README.md", "package.json", "linkinator.config.json"])
 
 # Copy common templates
 common_templates = gcp.CommonTemplates()

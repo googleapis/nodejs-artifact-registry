@@ -1,5 +1,5 @@
 {
-  "name": "@google-devtools/artifact-registry",
+  "name": "@google-cloud/artifact-registry",
   "version": "0.1.0",
   "description": "Artifactregistry client for Node.js",
   "repository": "googleapis/nodejs-artifactregistry",

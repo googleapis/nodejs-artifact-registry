@@ -487,6 +487,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getRepository(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.get_repository.js</caption>
+   * region_tag:artifactregistry_get_repository_sample
+   *
    */
   getRepository(
     request?: protos.google.devtools.artifactregistry.v1beta2.IGetRepositoryRequest,
@@ -588,6 +592,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateRepository(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.update_repository.js</caption>
+   * region_tag:artifactregistry_update_repository_sample
+   *
    */
   updateRepository(
     request?: protos.google.devtools.artifactregistry.v1beta2.IUpdateRepositoryRequest,
@@ -685,6 +693,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getPackage(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.get_package.js</caption>
+   * region_tag:artifactregistry_get_package_sample
+   *
    */
   getPackage(
     request?: protos.google.devtools.artifactregistry.v1beta2.IGetPackageRequest,
@@ -784,6 +796,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getVersion(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.get_version.js</caption>
+   * region_tag:artifactregistry_get_version_sample
+   *
    */
   getVersion(
     request?: protos.google.devtools.artifactregistry.v1beta2.IGetVersionRequest,
@@ -881,6 +897,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getFile(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.get_file.js</caption>
+   * region_tag:artifactregistry_get_file_sample
+   *
    */
   getFile(
     request?: protos.google.devtools.artifactregistry.v1beta2.IGetFileRequest,
@@ -978,6 +998,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getTag(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.get_tag.js</caption>
+   * region_tag:artifactregistry_get_tag_sample
+   *
    */
   getTag(
     request?: protos.google.devtools.artifactregistry.v1beta2.IGetTagRequest,
@@ -1079,6 +1103,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.createTag(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.create_tag.js</caption>
+   * region_tag:artifactregistry_create_tag_sample
+   *
    */
   createTag(
     request?: protos.google.devtools.artifactregistry.v1beta2.ICreateTagRequest,
@@ -1180,6 +1208,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.updateTag(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.update_tag.js</caption>
+   * region_tag:artifactregistry_update_tag_sample
+   *
    */
   updateTag(
     request?: protos.google.devtools.artifactregistry.v1beta2.IUpdateTagRequest,
@@ -1277,6 +1309,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.deleteTag(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_tag.js</caption>
+   * region_tag:artifactregistry_delete_tag_sample
+   *
    */
   deleteTag(
     request?: protos.google.devtools.artifactregistry.v1beta2.IDeleteTagRequest,
@@ -1373,6 +1409,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.setIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.set_iam_policy.js</caption>
+   * region_tag:artifactregistry_set_iam_policy_sample
+   *
    */
   setIamPolicy(
     request?: protos.google.iam.v1.ISetIamPolicyRequest,
@@ -1460,6 +1500,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.getIamPolicy(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.get_iam_policy.js</caption>
+   * region_tag:artifactregistry_get_iam_policy_sample
+   *
    */
   getIamPolicy(
     request?: protos.google.iam.v1.IGetIamPolicyRequest,
@@ -1549,6 +1593,10 @@ export class ArtifactRegistryClient {
    *   for more details and examples.
    * @example
    * const [response] = await client.testIamPermissions(request);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.test_iam_permissions.js</caption>
+   * region_tag:artifactregistry_test_iam_permissions_sample
+   *
    */
   testIamPermissions(
     request?: protos.google.iam.v1.ITestIamPermissionsRequest,
@@ -1650,6 +1698,10 @@ export class ArtifactRegistryClient {
    * @example
    * const [operation] = await client.createRepository(request);
    * const [response] = await operation.promise();
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.create_repository.js</caption>
+   * region_tag:artifactregistry_create_repository_sample
+   *
    */
   createRepository(
     request?: protos.google.devtools.artifactregistry.v1beta2.ICreateRepositoryRequest,
@@ -1713,6 +1765,10 @@ export class ArtifactRegistryClient {
    * console.log(decodedOperation.result);
    * console.log(decodedOperation.done);
    * console.log(decodedOperation.metadata);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.create_repository.js</caption>
+   * region_tag:artifactregistry_create_repository_sample
+   *
    */
   async checkCreateRepositoryProgress(
     name: string
@@ -1793,6 +1849,10 @@ export class ArtifactRegistryClient {
    * @example
    * const [operation] = await client.deleteRepository(request);
    * const [response] = await operation.promise();
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_repository.js</caption>
+   * region_tag:artifactregistry_delete_repository_sample
+   *
    */
   deleteRepository(
     request?: protos.google.devtools.artifactregistry.v1beta2.IDeleteRepositoryRequest,
@@ -1856,6 +1916,10 @@ export class ArtifactRegistryClient {
    * console.log(decodedOperation.result);
    * console.log(decodedOperation.done);
    * console.log(decodedOperation.metadata);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_repository.js</caption>
+   * region_tag:artifactregistry_delete_repository_sample
+   *
    */
   async checkDeleteRepositoryProgress(
     name: string
@@ -1935,6 +1999,10 @@ export class ArtifactRegistryClient {
    * @example
    * const [operation] = await client.deletePackage(request);
    * const [response] = await operation.promise();
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_package.js</caption>
+   * region_tag:artifactregistry_delete_package_sample
+   *
    */
   deletePackage(
     request?: protos.google.devtools.artifactregistry.v1beta2.IDeletePackageRequest,
@@ -1998,6 +2066,10 @@ export class ArtifactRegistryClient {
    * console.log(decodedOperation.result);
    * console.log(decodedOperation.done);
    * console.log(decodedOperation.metadata);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_package.js</caption>
+   * region_tag:artifactregistry_delete_package_sample
+   *
    */
   async checkDeletePackageProgress(
     name: string
@@ -2080,6 +2152,10 @@ export class ArtifactRegistryClient {
    * @example
    * const [operation] = await client.deleteVersion(request);
    * const [response] = await operation.promise();
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_version.js</caption>
+   * region_tag:artifactregistry_delete_version_sample
+   *
    */
   deleteVersion(
     request?: protos.google.devtools.artifactregistry.v1beta2.IDeleteVersionRequest,
@@ -2143,6 +2219,10 @@ export class ArtifactRegistryClient {
    * console.log(decodedOperation.result);
    * console.log(decodedOperation.done);
    * console.log(decodedOperation.metadata);
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.delete_version.js</caption>
+   * region_tag:artifactregistry_delete_version_sample
+   *
    */
   async checkDeleteVersionProgress(
     name: string
@@ -2221,6 +2301,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_repositories.js</caption>
+   * region_tag:artifactregistry_list_repositories_sample
+   *
    */
   listRepositories(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListRepositoriesRequest,
@@ -2288,6 +2372,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_repositories.js</caption>
+   * region_tag:artifactregistry_list_repositories_sample
+   *
    */
   listRepositoriesStream(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListRepositoriesRequest,
@@ -2301,7 +2389,8 @@ export class ArtifactRegistryClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listRepositories'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listRepositories.createStream(
       this.innerApiCalls.listRepositories as gax.GaxCall,
@@ -2338,6 +2427,10 @@ export class ArtifactRegistryClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_repositories.js</caption>
+   * region_tag:artifactregistry_list_repositories_sample
+   *
    */
   listRepositoriesAsync(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListRepositoriesRequest,
@@ -2352,7 +2445,8 @@ export class ArtifactRegistryClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listRepositories'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listRepositories.asyncIterate(
       this.innerApiCalls['listRepositories'] as GaxCall,
@@ -2415,6 +2509,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_packages.js</caption>
+   * region_tag:artifactregistry_list_packages_sample
+   *
    */
   listPackages(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListPackagesRequest,
@@ -2482,6 +2580,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_packages.js</caption>
+   * region_tag:artifactregistry_list_packages_sample
+   *
    */
   listPackagesStream(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListPackagesRequest,
@@ -2495,7 +2597,8 @@ export class ArtifactRegistryClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listPackages'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listPackages.createStream(
       this.innerApiCalls.listPackages as gax.GaxCall,
@@ -2532,6 +2635,10 @@ export class ArtifactRegistryClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_packages.js</caption>
+   * region_tag:artifactregistry_list_packages_sample
+   *
    */
   listPackagesAsync(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListPackagesRequest,
@@ -2546,7 +2653,8 @@ export class ArtifactRegistryClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listPackages'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listPackages.asyncIterate(
       this.innerApiCalls['listPackages'] as GaxCall,
@@ -2611,6 +2719,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_versions.js</caption>
+   * region_tag:artifactregistry_list_versions_sample
+   *
    */
   listVersions(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListVersionsRequest,
@@ -2680,6 +2792,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_versions.js</caption>
+   * region_tag:artifactregistry_list_versions_sample
+   *
    */
   listVersionsStream(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListVersionsRequest,
@@ -2693,7 +2809,8 @@ export class ArtifactRegistryClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listVersions'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listVersions.createStream(
       this.innerApiCalls.listVersions as gax.GaxCall,
@@ -2732,6 +2849,10 @@ export class ArtifactRegistryClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_versions.js</caption>
+   * region_tag:artifactregistry_list_versions_sample
+   *
    */
   listVersionsAsync(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListVersionsRequest,
@@ -2746,7 +2867,8 @@ export class ArtifactRegistryClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listVersions'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listVersions.asyncIterate(
       this.innerApiCalls['listVersions'] as GaxCall,
@@ -2821,6 +2943,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_files.js</caption>
+   * region_tag:artifactregistry_list_files_sample
+   *
    */
   listFiles(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListFilesRequest,
@@ -2900,6 +3026,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_files.js</caption>
+   * region_tag:artifactregistry_list_files_sample
+   *
    */
   listFilesStream(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListFilesRequest,
@@ -2913,7 +3043,8 @@ export class ArtifactRegistryClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listFiles'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listFiles.createStream(
       this.innerApiCalls.listFiles as gax.GaxCall,
@@ -2962,6 +3093,10 @@ export class ArtifactRegistryClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_files.js</caption>
+   * region_tag:artifactregistry_list_files_sample
+   *
    */
   listFilesAsync(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListFilesRequest,
@@ -2976,7 +3111,8 @@ export class ArtifactRegistryClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listFiles'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listFiles.asyncIterate(
       this.innerApiCalls['listFiles'] as GaxCall,
@@ -3049,6 +3185,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_tags.js</caption>
+   * region_tag:artifactregistry_list_tags_sample
+   *
    */
   listTags(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListTagsRequest,
@@ -3126,6 +3266,10 @@ export class ArtifactRegistryClient {
    *   Please see the
    *   [documentation](https://github.com/googleapis/gax-nodejs/blob/master/client-libraries.md#auto-pagination)
    *   for more details and examples.
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_tags.js</caption>
+   * region_tag:artifactregistry_list_tags_sample
+   *
    */
   listTagsStream(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListTagsRequest,
@@ -3139,7 +3283,8 @@ export class ArtifactRegistryClient {
       gax.routingHeader.fromParams({
         parent: request.parent || '',
       });
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listTags'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listTags.createStream(
       this.innerApiCalls.listTags as gax.GaxCall,
@@ -3186,6 +3331,10 @@ export class ArtifactRegistryClient {
    * for await (const response of iterable) {
    *   // process response
    * }
+   *
+   * @example <caption>include:samples/generated/v1beta2/artifact_registry.list_tags.js</caption>
+   * region_tag:artifactregistry_list_tags_sample
+   *
    */
   listTagsAsync(
     request?: protos.google.devtools.artifactregistry.v1beta2.IListTagsRequest,
@@ -3200,7 +3349,8 @@ export class ArtifactRegistryClient {
         parent: request.parent || '',
       });
     options = options || {};
-    const callSettings = new gax.CallSettings(options);
+    const defaultCallSettings = this._defaults['listTags'];
+    const callSettings = defaultCallSettings.merge(options);
     this.initialize();
     return this.descriptors.page.listTags.asyncIterate(
       this.innerApiCalls['listTags'] as GaxCall,

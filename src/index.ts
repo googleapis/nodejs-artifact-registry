@@ -16,12 +16,13 @@
 // ** https://github.com/googleapis/synthtool **
 // ** All changes to this file may be overwritten. **
 
+import * as v1 from './v1';
 import * as v1beta2 from './v1beta2';
 
 const ArtifactRegistryClient = v1beta2.ArtifactRegistryClient;
 type ArtifactRegistryClient = v1beta2.ArtifactRegistryClient;
 
-export {v1beta2, ArtifactRegistryClient};
-export default {v1beta2, ArtifactRegistryClient};
+export {v1, v1beta2, ArtifactRegistryClient};
+export default {v1, v1beta2, ArtifactRegistryClient};
 import * as protos from '../protos/protos';
 export {protos};

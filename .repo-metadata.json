@@ -13,5 +13,5 @@
   "api_id": "artifactregistry.googleapis.com",
   "repo": "googleapis/nodejs-artifact-registry",
   "api_shortname": "artifactregistry",
-  "library_type": ""
+  "library_type": "GAPIC_AUTO"
 }

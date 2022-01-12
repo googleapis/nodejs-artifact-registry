@@ -11,5 +11,7 @@
   "distribution_name": "@google-cloud/artifact-registry",
   "name_pretty": "Artifact Registry",
   "api_id": "artifactregistry.googleapis.com",
-  "repo": "googleapis/nodejs-artifact-registry"
+  "repo": "googleapis/nodejs-artifact-registry",
+  "api_shortname": "artifactregistry",
+  "library_type": "GAPIC_AUTO"
 }

@@ -1,5 +1,5 @@
 {
-  "default_version": "v1beta2",
+  "default_version": "v1",
   "release_level": "ga",
   "requires_billing": true,
   "client_documentation": "https://cloud.google.com/nodejs/docs/reference/artifact-registry/latest",

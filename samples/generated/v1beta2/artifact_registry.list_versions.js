@@ -25,8 +25,7 @@ function main() {
    */
   // const parent = 'abc123'
   /**
-   *  The maximum number of versions to return.
-   *  Maximum page size is 10,000.
+   *  The maximum number of versions to return. Maximum page size is 1,000.
    */
   // const pageSize = 1234
   /**
@@ -37,6 +36,10 @@ function main() {
    *  The view that should be returned in the response.
    */
   // const view = {}
+  /**
+   *  Optional. The field to order the results by.
+   */
+  // const orderBy = 'abc123'
 
   // Imports the Artifactregistry library
   const {ArtifactRegistryClient} = require('@google-cloud/artifact-registry').v1beta2;

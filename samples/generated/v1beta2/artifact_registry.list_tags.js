@@ -34,8 +34,7 @@ function main() {
    */
   // const filter = 'abc123'
   /**
-   *  The maximum number of tags to return.
-   *  Maximum page size is 10,000.
+   *  The maximum number of tags to return. Maximum page size is 10,000.
    */
   // const pageSize = 1234
   /**

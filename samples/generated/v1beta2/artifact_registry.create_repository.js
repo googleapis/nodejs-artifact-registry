@@ -15,13 +15,13 @@
 
 'use strict';
 
-function main() {
+function main(parent) {
   // [START artifactregistry_v1beta2_generated_ArtifactRegistry_CreateRepository_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  The name of the parent resource where the repository will be created.
+   *  Required. The name of the parent resource where the repository will be created.
    */
   // const parent = 'abc123'
   /**
@@ -42,6 +42,7 @@ function main() {
   async function callCreateRepository() {
     // Construct request
     const request = {
+      parent,
     };
 
     // Run request

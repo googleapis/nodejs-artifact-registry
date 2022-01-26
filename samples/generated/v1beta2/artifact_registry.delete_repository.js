@@ -15,13 +15,13 @@
 
 'use strict';
 
-function main() {
+function main(name) {
   // [START artifactregistry_v1beta2_generated_ArtifactRegistry_DeleteRepository_async]
   /**
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  The name of the repository to delete.
+   *  Required. The name of the repository to delete.
    */
   // const name = 'abc123'
 
@@ -34,6 +34,7 @@ function main() {
   async function callDeleteRepository() {
     // Construct request
     const request = {
+      name,
     };
 
     // Run request

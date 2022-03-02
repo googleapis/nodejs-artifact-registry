@@ -26,7 +26,8 @@ function main() {
    * TODO(developer): Uncomment these variables before running the sample.
    */
   /**
-   *  The name of the parent resource whose files will be listed.
+   *  The name of the repository whose files will be listed. For example:
+   *  "projects/p1/locations/us-central1/repositories/repo1
    */
   // const parent = 'abc123'
   /**

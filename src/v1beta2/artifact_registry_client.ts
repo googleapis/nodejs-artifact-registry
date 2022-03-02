@@ -3259,7 +3259,8 @@ export class ArtifactRegistryClient {
    * @param {Object} request
    *   The request object that will be sent.
    * @param {string} request.parent
-   *   The name of the parent resource whose files will be listed.
+   *   The name of the repository whose files will be listed. For example:
+   *   "projects/p1/locations/us-central1/repositories/repo1
    * @param {string} request.filter
    *   An expression for filtering the results of the request. Filter rules are
    *   case insensitive. The fields eligible for filtering are:
@@ -3370,7 +3371,8 @@ export class ArtifactRegistryClient {
    * @param {Object} request
    *   The request object that will be sent.
    * @param {string} request.parent
-   *   The name of the parent resource whose files will be listed.
+   *   The name of the repository whose files will be listed. For example:
+   *   "projects/p1/locations/us-central1/repositories/repo1
    * @param {string} request.filter
    *   An expression for filtering the results of the request. Filter rules are
    *   case insensitive. The fields eligible for filtering are:
@@ -3429,7 +3431,8 @@ export class ArtifactRegistryClient {
    * @param {Object} request
    *   The request object that will be sent.
    * @param {string} request.parent
-   *   The name of the parent resource whose files will be listed.
+   *   The name of the repository whose files will be listed. For example:
+   *   "projects/p1/locations/us-central1/repositories/repo1
    * @param {string} request.filter
    *   An expression for filtering the results of the request. Filter rules are
    *   case insensitive. The fields eligible for filtering are:

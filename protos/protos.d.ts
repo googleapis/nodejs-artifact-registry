@@ -844,21 +844,21 @@ export namespace google {
                 namespace ArtifactRegistry {
 
                     /**
-                     * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry|listDockerImages}.
+                     * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry#listDockerImages}.
                      * @param error Error, if any
                      * @param [response] ListDockerImagesResponse
                      */
                     type ListDockerImagesCallback = (error: (Error|null), response?: google.devtools.artifactregistry.v1.ListDockerImagesResponse) => void;
 
                     /**
-                     * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry|listRepositories}.
+                     * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry#listRepositories}.
                      * @param error Error, if any
                      * @param [response] ListRepositoriesResponse
                      */
                     type ListRepositoriesCallback = (error: (Error|null), response?: google.devtools.artifactregistry.v1.ListRepositoriesResponse) => void;
 
                     /**
-                     * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry|getRepository}.
+                     * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry#getRepository}.
                      * @param error Error, if any
                      * @param [response] Repository
                      */
@@ -4539,7 +4539,6 @@ export namespace google {
                 /** Properties of a GetTagRequest. */
                 interface IGetTagRequest {
 
-<<<<<<< Updated upstream
                     /** GetTagRequest name */
                     name?: (string|null);
                 }
@@ -4550,19 +4549,6 @@ export namespace google {
                     /**
                      * Constructs a new GetTagRequest.
                      * @param [properties] Properties to set
-=======
-                    /**
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listRepositories}.
-                     * @param error Error, if any
-                     * @param [response] ListRepositoriesResponse
-                     */
-                    type ListRepositoriesCallback = (error: (Error|null), response?: google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse) => void;
-
-                    /**
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getRepository}.
-                     * @param error Error, if any
-                     * @param [response] Repository
->>>>>>> Stashed changes
                      */
                     constructor(properties?: google.devtools.artifactregistry.v1beta2.IGetTagRequest);
 
@@ -4570,126 +4556,72 @@ export namespace google {
                     public name: string;
 
                     /**
-<<<<<<< Updated upstream
                      * Creates a new GetTagRequest instance using the specified properties.
                      * @param [properties] Properties to set
                      * @returns GetTagRequest instance
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|createRepository}.
-                     * @param error Error, if any
-                     * @param [response] Operation
->>>>>>> Stashed changes
                      */
                     public static create(properties?: google.devtools.artifactregistry.v1beta2.IGetTagRequest): google.devtools.artifactregistry.v1beta2.GetTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Encodes the specified GetTagRequest message. Does not implicitly {@link google.devtools.artifactregistry.v1beta2.GetTagRequest.verify|verify} messages.
                      * @param message GetTagRequest message or plain object to encode
                      * @param [writer] Writer to encode to
                      * @returns Writer
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|updateRepository}.
-                     * @param error Error, if any
-                     * @param [response] Repository
->>>>>>> Stashed changes
                      */
                     public static encode(message: google.devtools.artifactregistry.v1beta2.IGetTagRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
                     /**
-<<<<<<< Updated upstream
                      * Encodes the specified GetTagRequest message, length delimited. Does not implicitly {@link google.devtools.artifactregistry.v1beta2.GetTagRequest.verify|verify} messages.
                      * @param message GetTagRequest message or plain object to encode
                      * @param [writer] Writer to encode to
                      * @returns Writer
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deleteRepository}.
-                     * @param error Error, if any
-                     * @param [response] Operation
->>>>>>> Stashed changes
                      */
                     public static encodeDelimited(message: google.devtools.artifactregistry.v1beta2.IGetTagRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
                     /**
-<<<<<<< Updated upstream
                      * Decodes a GetTagRequest message from the specified reader or buffer.
                      * @param reader Reader or buffer to decode from
                      * @param [length] Message length if known beforehand
                      * @returns GetTagRequest
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listPackages}.
-                     * @param error Error, if any
-                     * @param [response] ListPackagesResponse
->>>>>>> Stashed changes
                      */
                     public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): google.devtools.artifactregistry.v1beta2.GetTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Decodes a GetTagRequest message from the specified reader or buffer, length delimited.
                      * @param reader Reader or buffer to decode from
                      * @returns GetTagRequest
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getPackage}.
-                     * @param error Error, if any
-                     * @param [response] Package
->>>>>>> Stashed changes
                      */
                     public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): google.devtools.artifactregistry.v1beta2.GetTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Verifies a GetTagRequest message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deletePackage}.
-                     * @param error Error, if any
-                     * @param [response] Operation
->>>>>>> Stashed changes
                      */
                     public static verify(message: { [k: string]: any }): (string|null);
 
                     /**
-<<<<<<< Updated upstream
                      * Creates a GetTagRequest message from a plain object. Also converts values to their respective internal types.
                      * @param object Plain object
                      * @returns GetTagRequest
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listVersions}.
-                     * @param error Error, if any
-                     * @param [response] ListVersionsResponse
->>>>>>> Stashed changes
                      */
                     public static fromObject(object: { [k: string]: any }): google.devtools.artifactregistry.v1beta2.GetTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Creates a plain object from a GetTagRequest message. Also converts values to other types if specified.
                      * @param message GetTagRequest
                      * @param [options] Conversion options
                      * @returns Plain object
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getVersion}.
-                     * @param error Error, if any
-                     * @param [response] Version
->>>>>>> Stashed changes
                      */
                     public static toObject(message: google.devtools.artifactregistry.v1beta2.GetTagRequest, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
                     /**
-<<<<<<< Updated upstream
                      * Converts this GetTagRequest to JSON.
                      * @returns JSON object
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deleteVersion}.
-                     * @param error Error, if any
-                     * @param [response] Operation
->>>>>>> Stashed changes
                      */
                     public toJSON(): { [k: string]: any };
                 }
@@ -4711,14 +4643,8 @@ export namespace google {
                 class CreateTagRequest implements ICreateTagRequest {
 
                     /**
-<<<<<<< Updated upstream
                      * Constructs a new CreateTagRequest.
                      * @param [properties] Properties to set
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listFiles}.
-                     * @param error Error, if any
-                     * @param [response] ListFilesResponse
->>>>>>> Stashed changes
                      */
                     constructor(properties?: google.devtools.artifactregistry.v1beta2.ICreateTagRequest);
 
@@ -4732,126 +4658,72 @@ export namespace google {
                     public tag?: (google.devtools.artifactregistry.v1beta2.ITag|null);
 
                     /**
-<<<<<<< Updated upstream
                      * Creates a new CreateTagRequest instance using the specified properties.
                      * @param [properties] Properties to set
                      * @returns CreateTagRequest instance
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getFile}.
-                     * @param error Error, if any
-                     * @param [response] File
->>>>>>> Stashed changes
                      */
                     public static create(properties?: google.devtools.artifactregistry.v1beta2.ICreateTagRequest): google.devtools.artifactregistry.v1beta2.CreateTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Encodes the specified CreateTagRequest message. Does not implicitly {@link google.devtools.artifactregistry.v1beta2.CreateTagRequest.verify|verify} messages.
                      * @param message CreateTagRequest message or plain object to encode
                      * @param [writer] Writer to encode to
                      * @returns Writer
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listTags}.
-                     * @param error Error, if any
-                     * @param [response] ListTagsResponse
->>>>>>> Stashed changes
                      */
                     public static encode(message: google.devtools.artifactregistry.v1beta2.ICreateTagRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
                     /**
-<<<<<<< Updated upstream
                      * Encodes the specified CreateTagRequest message, length delimited. Does not implicitly {@link google.devtools.artifactregistry.v1beta2.CreateTagRequest.verify|verify} messages.
                      * @param message CreateTagRequest message or plain object to encode
                      * @param [writer] Writer to encode to
                      * @returns Writer
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getTag}.
-                     * @param error Error, if any
-                     * @param [response] Tag
->>>>>>> Stashed changes
                      */
                     public static encodeDelimited(message: google.devtools.artifactregistry.v1beta2.ICreateTagRequest, writer?: $protobuf.Writer): $protobuf.Writer;
 
                     /**
-<<<<<<< Updated upstream
                      * Decodes a CreateTagRequest message from the specified reader or buffer.
                      * @param reader Reader or buffer to decode from
                      * @param [length] Message length if known beforehand
                      * @returns CreateTagRequest
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|createTag}.
-                     * @param error Error, if any
-                     * @param [response] Tag
->>>>>>> Stashed changes
                      */
                     public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): google.devtools.artifactregistry.v1beta2.CreateTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Decodes a CreateTagRequest message from the specified reader or buffer, length delimited.
                      * @param reader Reader or buffer to decode from
                      * @returns CreateTagRequest
                      * @throws {Error} If the payload is not a reader or valid buffer
                      * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|updateTag}.
-                     * @param error Error, if any
-                     * @param [response] Tag
->>>>>>> Stashed changes
                      */
                     public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): google.devtools.artifactregistry.v1beta2.CreateTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Verifies a CreateTagRequest message.
                      * @param message Plain object to verify
                      * @returns `null` if valid, otherwise the reason why it is not
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deleteTag}.
-                     * @param error Error, if any
-                     * @param [response] Empty
->>>>>>> Stashed changes
                      */
                     public static verify(message: { [k: string]: any }): (string|null);
 
                     /**
-<<<<<<< Updated upstream
                      * Creates a CreateTagRequest message from a plain object. Also converts values to their respective internal types.
                      * @param object Plain object
                      * @returns CreateTagRequest
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|setIamPolicy}.
-                     * @param error Error, if any
-                     * @param [response] Policy
->>>>>>> Stashed changes
                      */
                     public static fromObject(object: { [k: string]: any }): google.devtools.artifactregistry.v1beta2.CreateTagRequest;
 
                     /**
-<<<<<<< Updated upstream
                      * Creates a plain object from a CreateTagRequest message. Also converts values to other types if specified.
                      * @param message CreateTagRequest
                      * @param [options] Conversion options
                      * @returns Plain object
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getIamPolicy}.
-                     * @param error Error, if any
-                     * @param [response] Policy
->>>>>>> Stashed changes
                      */
                     public static toObject(message: google.devtools.artifactregistry.v1beta2.CreateTagRequest, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
                     /**
-<<<<<<< Updated upstream
                      * Converts this CreateTagRequest to JSON.
                      * @returns JSON object
-=======
-                     * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|testIamPermissions}.
-                     * @param error Error, if any
-                     * @param [response] TestIamPermissionsResponse
->>>>>>> Stashed changes
                      */
                     public toJSON(): { [k: string]: any };
                 }
@@ -11270,21 +11142,21 @@ export namespace google {
             namespace IAMPolicy {
 
                 /**
-                 * Callback as used by {@link google.iam.v1.IAMPolicy|setIamPolicy}.
+                 * Callback as used by {@link google.iam.v1.IAMPolicy#setIamPolicy}.
                  * @param error Error, if any
                  * @param [response] Policy
                  */
                 type SetIamPolicyCallback = (error: (Error|null), response?: google.iam.v1.Policy) => void;
 
                 /**
-                 * Callback as used by {@link google.iam.v1.IAMPolicy|getIamPolicy}.
+                 * Callback as used by {@link google.iam.v1.IAMPolicy#getIamPolicy}.
                  * @param error Error, if any
                  * @param [response] Policy
                  */
                 type GetIamPolicyCallback = (error: (Error|null), response?: google.iam.v1.Policy) => void;
 
                 /**
-                 * Callback as used by {@link google.iam.v1.IAMPolicy|testIamPermissions}.
+                 * Callback as used by {@link google.iam.v1.IAMPolicy#testIamPermissions}.
                  * @param error Error, if any
                  * @param [response] TestIamPermissionsResponse
                  */
@@ -11970,35 +11842,35 @@ export namespace google {
         namespace Operations {
 
             /**
-             * Callback as used by {@link google.longrunning.Operations|listOperations}.
+             * Callback as used by {@link google.longrunning.Operations#listOperations}.
              * @param error Error, if any
              * @param [response] ListOperationsResponse
              */
             type ListOperationsCallback = (error: (Error|null), response?: google.longrunning.ListOperationsResponse) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations|getOperation}.
+             * Callback as used by {@link google.longrunning.Operations#getOperation}.
              * @param error Error, if any
              * @param [response] Operation
              */
             type GetOperationCallback = (error: (Error|null), response?: google.longrunning.Operation) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations|deleteOperation}.
+             * Callback as used by {@link google.longrunning.Operations#deleteOperation}.
              * @param error Error, if any
              * @param [response] Empty
              */
             type DeleteOperationCallback = (error: (Error|null), response?: google.protobuf.Empty) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations|cancelOperation}.
+             * Callback as used by {@link google.longrunning.Operations#cancelOperation}.
              * @param error Error, if any
              * @param [response] Empty
              */
             type CancelOperationCallback = (error: (Error|null), response?: google.protobuf.Empty) => void;
 
             /**
-             * Callback as used by {@link google.longrunning.Operations|waitOperation}.
+             * Callback as used by {@link google.longrunning.Operations#waitOperation}.
              * @param error Error, if any
              * @param [response] Operation
              */

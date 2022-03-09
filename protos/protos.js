@@ -2001,7 +2001,7 @@
                         };
     
                         /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry|listDockerImages}.
+                         * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry#listDockerImages}.
                          * @memberof google.devtools.artifactregistry.v1.ArtifactRegistry
                          * @typedef ListDockerImagesCallback
                          * @type {function}
@@ -2034,7 +2034,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry|listRepositories}.
+                         * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry#listRepositories}.
                          * @memberof google.devtools.artifactregistry.v1.ArtifactRegistry
                          * @typedef ListRepositoriesCallback
                          * @type {function}
@@ -2067,7 +2067,7 @@
                          */
     
                         /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry|getRepository}.
+                         * Callback as used by {@link google.devtools.artifactregistry.v1.ArtifactRegistry#getRepository}.
                          * @memberof google.devtools.artifactregistry.v1.ArtifactRegistry
                          * @typedef GetRepositoryCallback
                          * @type {function}
@@ -6658,21 +6658,12 @@
                     v1beta2.ListRepositoriesRequest = (function() {
     
                         /**
-<<<<<<< Updated upstream
                          * Properties of a ListRepositoriesRequest.
                          * @memberof google.devtools.artifactregistry.v1beta2
                          * @interface IListRepositoriesRequest
                          * @property {string|null} [parent] ListRepositoriesRequest parent
                          * @property {number|null} [pageSize] ListRepositoriesRequest pageSize
                          * @property {string|null} [pageToken] ListRepositoriesRequest pageToken
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listRepositories}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef ListRepositoriesCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse} [response] ListRepositoriesResponse
->>>>>>> Stashed changes
                          */
     
                         /**
@@ -6695,21 +6686,6 @@
                          * @member {string} parent
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest
                          * @instance
-<<<<<<< Updated upstream
-=======
-                         * @param {google.devtools.artifactregistry.v1beta2.IListRepositoriesRequest} request ListRepositoriesRequest message or plain object
-                         * @returns {Promise<google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse>} Promise
-                         * @variation 2
-                         */
-    
-                        /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getRepository}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef GetRepositoryCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Repository} [response] Repository
->>>>>>> Stashed changes
                          */
                         ListRepositoriesRequest.prototype.parent = "";
     
@@ -6730,21 +6706,12 @@
                         ListRepositoriesRequest.prototype.pageToken = "";
     
                         /**
-<<<<<<< Updated upstream
                          * Creates a new ListRepositoriesRequest instance using the specified properties.
                          * @function create
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest
                          * @static
                          * @param {google.devtools.artifactregistry.v1beta2.IListRepositoriesRequest=} [properties] Properties to set
                          * @returns {google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest} ListRepositoriesRequest instance
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|createRepository}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef CreateRepositoryCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.longrunning.Operation} [response] Operation
->>>>>>> Stashed changes
                          */
                         ListRepositoriesRequest.create = function create(properties) {
                             return new ListRepositoriesRequest(properties);
@@ -6785,7 +6752,6 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Decodes a ListRepositoriesRequest message from the specified reader or buffer.
                          * @function decode
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest
@@ -6795,38 +6761,6 @@
                          * @returns {google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest} ListRepositoriesRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|updateRepository}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef UpdateRepositoryCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Repository} [response] Repository
-                         */
-    
-                        /**
-                         * Calls UpdateRepository.
-                         * @function updateRepository
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.IUpdateRepositoryRequest} request UpdateRepositoryRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.UpdateRepositoryCallback} callback Node-style callback called with the error, if any, and Repository
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.updateRepository = function updateRepository(request, callback) {
-                            return this.rpcCall(updateRepository, $root.google.devtools.artifactregistry.v1beta2.UpdateRepositoryRequest, $root.google.devtools.artifactregistry.v1beta2.Repository, request, callback);
-                        }, "name", { value: "UpdateRepository" });
-    
-                        /**
-                         * Calls UpdateRepository.
-                         * @function updateRepository
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.IUpdateRepositoryRequest} request UpdateRepositoryRequest message or plain object
-                         * @returns {Promise<google.devtools.artifactregistry.v1beta2.Repository>} Promise
-                         * @variation 2
->>>>>>> Stashed changes
                          */
                         ListRepositoriesRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
@@ -6853,7 +6787,6 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Decodes a ListRepositoriesRequest message from the specified reader or buffer, length delimited.
                          * @function decodeDelimited
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest
@@ -6862,14 +6795,6 @@
                          * @returns {google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest} ListRepositoriesRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deleteRepository}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef DeleteRepositoryCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.longrunning.Operation} [response] Operation
->>>>>>> Stashed changes
                          */
                         ListRepositoriesRequest.decodeDelimited = function decodeDelimited(reader) {
                             if (!(reader instanceof $Reader))
@@ -6922,7 +6847,6 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Creates a plain object from a ListRepositoriesRequest message. Also converts values to other types if specified.
                          * @function toObject
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest
@@ -6930,14 +6854,6 @@
                          * @param {google.devtools.artifactregistry.v1beta2.ListRepositoriesRequest} message ListRepositoriesRequest
                          * @param {$protobuf.IConversionOptions} [options] Conversion options
                          * @returns {Object.<string,*>} Plain object
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listPackages}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef ListPackagesCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.ListPackagesResponse} [response] ListPackagesResponse
->>>>>>> Stashed changes
                          */
                         ListRepositoriesRequest.toObject = function toObject(message, options) {
                             if (!options)
@@ -6974,20 +6890,11 @@
                     v1beta2.ListRepositoriesResponse = (function() {
     
                         /**
-<<<<<<< Updated upstream
                          * Properties of a ListRepositoriesResponse.
                          * @memberof google.devtools.artifactregistry.v1beta2
                          * @interface IListRepositoriesResponse
                          * @property {Array.<google.devtools.artifactregistry.v1beta2.IRepository>|null} [repositories] ListRepositoriesResponse repositories
                          * @property {string|null} [nextPageToken] ListRepositoriesResponse nextPageToken
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getPackage}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef GetPackageCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Package} [response] Package
->>>>>>> Stashed changes
                          */
     
                         /**
@@ -7015,19 +6922,10 @@
                         ListRepositoriesResponse.prototype.repositories = $util.emptyArray;
     
                         /**
-<<<<<<< Updated upstream
                          * ListRepositoriesResponse nextPageToken.
                          * @member {string} nextPageToken
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse
                          * @instance
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deletePackage}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef DeletePackageCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.longrunning.Operation} [response] Operation
->>>>>>> Stashed changes
                          */
                         ListRepositoriesResponse.prototype.nextPageToken = "";
     
@@ -7064,7 +6962,6 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Encodes the specified ListRepositoriesResponse message, length delimited. Does not implicitly {@link google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse.verify|verify} messages.
                          * @function encodeDelimited
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse
@@ -7072,14 +6969,6 @@
                          * @param {google.devtools.artifactregistry.v1beta2.IListRepositoriesResponse} message ListRepositoriesResponse message or plain object to encode
                          * @param {$protobuf.Writer} [writer] Writer to encode to
                          * @returns {$protobuf.Writer} Writer
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listVersions}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef ListVersionsCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.ListVersionsResponse} [response] ListVersionsResponse
->>>>>>> Stashed changes
                          */
                         ListRepositoriesResponse.encodeDelimited = function encodeDelimited(message, writer) {
                             return this.encode(message, writer).ldelim();
@@ -7136,7 +7025,6 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Verifies a ListRepositoriesResponse message.
                          * @function verify
                          * @memberof google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse
@@ -7169,14 +7057,6 @@
                          * @static
                          * @param {Object.<string,*>} object Plain object
                          * @returns {google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse} ListRepositoriesResponse
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getVersion}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef GetVersionCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Version} [response] Version
->>>>>>> Stashed changes
                          */
                         ListRepositoriesResponse.fromObject = function fromObject(object) {
                             if (object instanceof $root.google.devtools.artifactregistry.v1beta2.ListRepositoriesResponse)
@@ -7241,19 +7121,10 @@
                     v1beta2.GetRepositoryRequest = (function() {
     
                         /**
-<<<<<<< Updated upstream
                          * Properties of a GetRepositoryRequest.
                          * @memberof google.devtools.artifactregistry.v1beta2
                          * @interface IGetRepositoryRequest
                          * @property {string|null} [name] GetRepositoryRequest name
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deleteVersion}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef DeleteVersionCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.longrunning.Operation} [response] Operation
->>>>>>> Stashed changes
                          */
     
                         /**
@@ -7280,21 +7151,12 @@
                         GetRepositoryRequest.prototype.name = "";
     
                         /**
-<<<<<<< Updated upstream
                          * Creates a new GetRepositoryRequest instance using the specified properties.
                          * @function create
                          * @memberof google.devtools.artifactregistry.v1beta2.GetRepositoryRequest
                          * @static
                          * @param {google.devtools.artifactregistry.v1beta2.IGetRepositoryRequest=} [properties] Properties to set
                          * @returns {google.devtools.artifactregistry.v1beta2.GetRepositoryRequest} GetRepositoryRequest instance
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listFiles}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef ListFilesCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.ListFilesResponse} [response] ListFilesResponse
->>>>>>> Stashed changes
                          */
                         GetRepositoryRequest.create = function create(properties) {
                             return new GetRepositoryRequest(properties);
@@ -7331,7 +7193,6 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Decodes a GetRepositoryRequest message from the specified reader or buffer.
                          * @function decode
                          * @memberof google.devtools.artifactregistry.v1beta2.GetRepositoryRequest
@@ -7341,14 +7202,6 @@
                          * @returns {google.devtools.artifactregistry.v1beta2.GetRepositoryRequest} GetRepositoryRequest
                          * @throws {Error} If the payload is not a reader or valid buffer
                          * @throws {$protobuf.util.ProtocolError} If required fields are missing
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getFile}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef GetFileCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.File} [response] File
->>>>>>> Stashed changes
                          */
                         GetRepositoryRequest.decode = function decode(reader, length) {
                             if (!(reader instanceof $Reader))
@@ -7402,21 +7255,12 @@
                         };
     
                         /**
-<<<<<<< Updated upstream
                          * Creates a GetRepositoryRequest message from a plain object. Also converts values to their respective internal types.
                          * @function fromObject
                          * @memberof google.devtools.artifactregistry.v1beta2.GetRepositoryRequest
                          * @static
                          * @param {Object.<string,*>} object Plain object
                          * @returns {google.devtools.artifactregistry.v1beta2.GetRepositoryRequest} GetRepositoryRequest
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|listTags}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef ListTagsCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.ListTagsResponse} [response] ListTagsResponse
->>>>>>> Stashed changes
                          */
                         GetRepositoryRequest.fromObject = function fromObject(object) {
                             if (object instanceof $root.google.devtools.artifactregistry.v1beta2.GetRepositoryRequest)
@@ -7464,21 +7308,12 @@
                     v1beta2.CreateRepositoryRequest = (function() {
     
                         /**
-<<<<<<< Updated upstream
                          * Properties of a CreateRepositoryRequest.
                          * @memberof google.devtools.artifactregistry.v1beta2
                          * @interface ICreateRepositoryRequest
                          * @property {string|null} [parent] CreateRepositoryRequest parent
                          * @property {string|null} [repositoryId] CreateRepositoryRequest repositoryId
                          * @property {google.devtools.artifactregistry.v1beta2.IRepository|null} [repository] CreateRepositoryRequest repository
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getTag}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef GetTagCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Tag} [response] Tag
->>>>>>> Stashed changes
                          */
     
                         /**
@@ -7505,211 +7340,17 @@
                         CreateRepositoryRequest.prototype.parent = "";
     
                         /**
-<<<<<<< Updated upstream
                          * CreateRepositoryRequest repositoryId.
                          * @member {string} repositoryId
                          * @memberof google.devtools.artifactregistry.v1beta2.CreateRepositoryRequest
                          * @instance
-=======
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|createTag}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef CreateTagCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Tag} [response] Tag
->>>>>>> Stashed changes
                          */
                         CreateRepositoryRequest.prototype.repositoryId = "";
     
                         /**
-<<<<<<< Updated upstream
                          * CreateRepositoryRequest repository.
                          * @member {google.devtools.artifactregistry.v1beta2.IRepository|null|undefined} repository
                          * @memberof google.devtools.artifactregistry.v1beta2.CreateRepositoryRequest
-=======
-                         * Calls CreateTag.
-                         * @function createTag
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.ICreateTagRequest} request CreateTagRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.CreateTagCallback} callback Node-style callback called with the error, if any, and Tag
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.createTag = function createTag(request, callback) {
-                            return this.rpcCall(createTag, $root.google.devtools.artifactregistry.v1beta2.CreateTagRequest, $root.google.devtools.artifactregistry.v1beta2.Tag, request, callback);
-                        }, "name", { value: "CreateTag" });
-    
-                        /**
-                         * Calls CreateTag.
-                         * @function createTag
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.ICreateTagRequest} request CreateTagRequest message or plain object
-                         * @returns {Promise<google.devtools.artifactregistry.v1beta2.Tag>} Promise
-                         * @variation 2
-                         */
-    
-                        /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|updateTag}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef UpdateTagCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.devtools.artifactregistry.v1beta2.Tag} [response] Tag
-                         */
-    
-                        /**
-                         * Calls UpdateTag.
-                         * @function updateTag
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.IUpdateTagRequest} request UpdateTagRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.UpdateTagCallback} callback Node-style callback called with the error, if any, and Tag
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.updateTag = function updateTag(request, callback) {
-                            return this.rpcCall(updateTag, $root.google.devtools.artifactregistry.v1beta2.UpdateTagRequest, $root.google.devtools.artifactregistry.v1beta2.Tag, request, callback);
-                        }, "name", { value: "UpdateTag" });
-    
-                        /**
-                         * Calls UpdateTag.
-                         * @function updateTag
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.IUpdateTagRequest} request UpdateTagRequest message or plain object
-                         * @returns {Promise<google.devtools.artifactregistry.v1beta2.Tag>} Promise
-                         * @variation 2
-                         */
-    
-                        /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|deleteTag}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef DeleteTagCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.protobuf.Empty} [response] Empty
-                         */
-    
-                        /**
-                         * Calls DeleteTag.
-                         * @function deleteTag
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.IDeleteTagRequest} request DeleteTagRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.DeleteTagCallback} callback Node-style callback called with the error, if any, and Empty
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.deleteTag = function deleteTag(request, callback) {
-                            return this.rpcCall(deleteTag, $root.google.devtools.artifactregistry.v1beta2.DeleteTagRequest, $root.google.protobuf.Empty, request, callback);
-                        }, "name", { value: "DeleteTag" });
-    
-                        /**
-                         * Calls DeleteTag.
-                         * @function deleteTag
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.devtools.artifactregistry.v1beta2.IDeleteTagRequest} request DeleteTagRequest message or plain object
-                         * @returns {Promise<google.protobuf.Empty>} Promise
-                         * @variation 2
-                         */
-    
-                        /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|setIamPolicy}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef SetIamPolicyCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.iam.v1.Policy} [response] Policy
-                         */
-    
-                        /**
-                         * Calls SetIamPolicy.
-                         * @function setIamPolicy
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.iam.v1.ISetIamPolicyRequest} request SetIamPolicyRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.SetIamPolicyCallback} callback Node-style callback called with the error, if any, and Policy
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.setIamPolicy = function setIamPolicy(request, callback) {
-                            return this.rpcCall(setIamPolicy, $root.google.iam.v1.SetIamPolicyRequest, $root.google.iam.v1.Policy, request, callback);
-                        }, "name", { value: "SetIamPolicy" });
-    
-                        /**
-                         * Calls SetIamPolicy.
-                         * @function setIamPolicy
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.iam.v1.ISetIamPolicyRequest} request SetIamPolicyRequest message or plain object
-                         * @returns {Promise<google.iam.v1.Policy>} Promise
-                         * @variation 2
-                         */
-    
-                        /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|getIamPolicy}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef GetIamPolicyCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.iam.v1.Policy} [response] Policy
-                         */
-    
-                        /**
-                         * Calls GetIamPolicy.
-                         * @function getIamPolicy
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.iam.v1.IGetIamPolicyRequest} request GetIamPolicyRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.GetIamPolicyCallback} callback Node-style callback called with the error, if any, and Policy
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.getIamPolicy = function getIamPolicy(request, callback) {
-                            return this.rpcCall(getIamPolicy, $root.google.iam.v1.GetIamPolicyRequest, $root.google.iam.v1.Policy, request, callback);
-                        }, "name", { value: "GetIamPolicy" });
-    
-                        /**
-                         * Calls GetIamPolicy.
-                         * @function getIamPolicy
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.iam.v1.IGetIamPolicyRequest} request GetIamPolicyRequest message or plain object
-                         * @returns {Promise<google.iam.v1.Policy>} Promise
-                         * @variation 2
-                         */
-    
-                        /**
-                         * Callback as used by {@link google.devtools.artifactregistry.v1beta2.ArtifactRegistry|testIamPermissions}.
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @typedef TestIamPermissionsCallback
-                         * @type {function}
-                         * @param {Error|null} error Error, if any
-                         * @param {google.iam.v1.TestIamPermissionsResponse} [response] TestIamPermissionsResponse
-                         */
-    
-                        /**
-                         * Calls TestIamPermissions.
-                         * @function testIamPermissions
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
-                         * @instance
-                         * @param {google.iam.v1.ITestIamPermissionsRequest} request TestIamPermissionsRequest message or plain object
-                         * @param {google.devtools.artifactregistry.v1beta2.ArtifactRegistry.TestIamPermissionsCallback} callback Node-style callback called with the error, if any, and TestIamPermissionsResponse
-                         * @returns {undefined}
-                         * @variation 1
-                         */
-                        Object.defineProperty(ArtifactRegistry.prototype.testIamPermissions = function testIamPermissions(request, callback) {
-                            return this.rpcCall(testIamPermissions, $root.google.iam.v1.TestIamPermissionsRequest, $root.google.iam.v1.TestIamPermissionsResponse, request, callback);
-                        }, "name", { value: "TestIamPermissions" });
-    
-                        /**
-                         * Calls TestIamPermissions.
-                         * @function testIamPermissions
-                         * @memberof google.devtools.artifactregistry.v1beta2.ArtifactRegistry
->>>>>>> Stashed changes
                          * @instance
                          */
                         CreateRepositoryRequest.prototype.repository = null;
@@ -27780,7 +27421,7 @@
                     };
     
                     /**
-                     * Callback as used by {@link google.iam.v1.IAMPolicy|setIamPolicy}.
+                     * Callback as used by {@link google.iam.v1.IAMPolicy#setIamPolicy}.
                      * @memberof google.iam.v1.IAMPolicy
                      * @typedef SetIamPolicyCallback
                      * @type {function}
@@ -27813,7 +27454,7 @@
                      */
     
                     /**
-                     * Callback as used by {@link google.iam.v1.IAMPolicy|getIamPolicy}.
+                     * Callback as used by {@link google.iam.v1.IAMPolicy#getIamPolicy}.
                      * @memberof google.iam.v1.IAMPolicy
                      * @typedef GetIamPolicyCallback
                      * @type {function}
@@ -27846,7 +27487,7 @@
                      */
     
                     /**
-                     * Callback as used by {@link google.iam.v1.IAMPolicy|testIamPermissions}.
+                     * Callback as used by {@link google.iam.v1.IAMPolicy#testIamPermissions}.
                      * @memberof google.iam.v1.IAMPolicy
                      * @typedef TestIamPermissionsCallback
                      * @type {function}
@@ -29241,7 +28882,7 @@
                 };
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|listOperations}.
+                 * Callback as used by {@link google.longrunning.Operations#listOperations}.
                  * @memberof google.longrunning.Operations
                  * @typedef ListOperationsCallback
                  * @type {function}
@@ -29274,7 +28915,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|getOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#getOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef GetOperationCallback
                  * @type {function}
@@ -29307,7 +28948,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|deleteOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#deleteOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef DeleteOperationCallback
                  * @type {function}
@@ -29340,7 +28981,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|cancelOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#cancelOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef CancelOperationCallback
                  * @type {function}
@@ -29373,7 +29014,7 @@
                  */
     
                 /**
-                 * Callback as used by {@link google.longrunning.Operations|waitOperation}.
+                 * Callback as used by {@link google.longrunning.Operations#waitOperation}.
                  * @memberof google.longrunning.Operations
                  * @typedef WaitOperationCallback
                  * @type {function}

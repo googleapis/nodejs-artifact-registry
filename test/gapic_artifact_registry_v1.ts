@@ -330,7 +330,6 @@ describe('v1.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1.GetRepositoryRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getRepository(request), expectedError);

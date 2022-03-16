@@ -3928,7 +3928,7 @@ export class ArtifactRegistryClient {
    * @param {string} project
    * @param {string} location
    * @param {string} repository
-   * @param {string} package
+   * @param {string} packageParam
    * @param {string} tag
    * @returns {string} Resource name string.
    */
@@ -3936,14 +3936,14 @@ export class ArtifactRegistryClient {
     project: string,
     location: string,
     repository: string,
-    package: string,
+    packageParam: string,
     tag: string
   ) {
     return this.pathTemplates.tagPathTemplate.render({
       project: project,
       location: location,
       repository: repository,
-      package: package,
+      package: packageParam,
       tag: tag,
     });
   }
@@ -4009,7 +4009,7 @@ export class ArtifactRegistryClient {
    * @param {string} project
    * @param {string} location
    * @param {string} repository
-   * @param {string} package
+   * @param {string} packageParam
    * @param {string} version
    * @returns {string} Resource name string.
    */
@@ -4017,14 +4017,14 @@ export class ArtifactRegistryClient {
     project: string,
     location: string,
     repository: string,
-    package: string,
+    packageParam: string,
     version: string
   ) {
     return this.pathTemplates.versionPathTemplate.render({
       project: project,
       location: location,
       repository: repository,
-      package: package,
+      package: packageParam,
       version: version,
     });
   }

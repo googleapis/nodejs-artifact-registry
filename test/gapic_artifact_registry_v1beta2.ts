@@ -362,7 +362,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.GetRepositoryRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getRepository(request), expectedError);
@@ -493,7 +492,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
       );
       request.repository = {};
       request.repository.name = '';
-      const expectedHeaderRequestParams = 'repository.name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.updateRepository(request), expectedError);
@@ -620,7 +618,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.GetPackageRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getPackage(request), expectedError);
@@ -747,7 +744,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.GetVersionRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getVersion(request), expectedError);
@@ -871,7 +867,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.GetFileRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getFile(request), expectedError);
@@ -995,7 +990,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.GetTagRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getTag(request), expectedError);
@@ -1119,7 +1113,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.CreateTagRequest()
       );
       request.parent = '';
-      const expectedHeaderRequestParams = 'parent=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.createTag(request), expectedError);
@@ -1247,7 +1240,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
       );
       request.tag = {};
       request.tag.name = '';
-      const expectedHeaderRequestParams = 'tag.name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.updateTag(request), expectedError);
@@ -1371,7 +1363,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.DeleteTagRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.deleteTag(request), expectedError);
@@ -1498,7 +1489,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.iam.v1.SetIamPolicyRequest()
       );
       request.resource = '';
-      const expectedHeaderRequestParams = 'resource=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.setIamPolicy(request), expectedError);
@@ -1625,7 +1615,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.iam.v1.GetIamPolicyRequest()
       );
       request.resource = '';
-      const expectedHeaderRequestParams = 'resource=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getIamPolicy(request), expectedError);
@@ -1753,7 +1742,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.iam.v1.TestIamPermissionsRequest()
       );
       request.resource = '';
-      const expectedHeaderRequestParams = 'resource=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.testIamPermissions(request), expectedError);
@@ -1881,7 +1869,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
         new protos.google.devtools.artifactregistry.v1beta2.GetProjectSettingsRequest()
       );
       request.name = '';
-      const expectedHeaderRequestParams = 'name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(client.getProjectSettings(request), expectedError);
@@ -2016,7 +2003,6 @@ describe('v1beta2.ArtifactRegistryClient', () => {
       );
       request.projectSettings = {};
       request.projectSettings.name = '';
-      const expectedHeaderRequestParams = 'project_settings.name=';
       const expectedError = new Error('The client has already been closed.');
       client.close();
       await assert.rejects(

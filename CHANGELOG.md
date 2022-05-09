@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/googleapis/nodejs-artifact-registry/compare/v1.3.0...v1.4.0) (2022-05-09)
+
+
+### Features
+
+* AuditConfig for IAM v1 ([#134](https://github.com/googleapis/nodejs-artifact-registry/issues/134)) ([5022f63](https://github.com/googleapis/nodejs-artifact-registry/commit/5022f6319c872cd90750c0d3d1e6b74c4a35df9e))
+
 ## [1.3.0](https://github.com/googleapis/nodejs-artifact-registry/compare/v1.2.3...v1.3.0) (2022-03-23)
 
 
